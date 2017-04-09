@@ -4,15 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context="jamesno.hw1.JamesProfile">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="182dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteY="-4dp"
+        tools:layout_editor_absoluteX="102dp" />
+
+    <TextView
+        android:layout_width="222dp"
+        android:layout_height="25dp"
+        android:text="@string/intro"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteY="64dp"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:layout_width="355dp"
+        android:layout_height="45dp"
+        android:text="@string/programIntro"
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <TextView
+        android:layout_width="356dp"
+        android:layout_height="41dp"
+        android:text="@string/cookingHist"
+        tools:layout_editor_absoluteY="104dp"
+        tools:layout_editor_absoluteX="7dp" />
+    " />
 
 </android.support.constraint.ConstraintLayout>
