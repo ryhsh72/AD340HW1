@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context="jamesno.hw1.JamesProfile">
+    tools:context="jamesno.hw1.JamesProfile"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <TextView
         android:layout_width="182dp"
@@ -13,30 +15,44 @@
         android:gravity="center"
         android:text="@string/title"
         android:textSize="40sp"
-        tools:layout_editor_absoluteY="-4dp"
-        tools:layout_editor_absoluteX="102dp" />
+        tools:layout_editor_absoluteY="-5dp"
+        tools:layout_editor_absoluteX="101dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="222dp"
         android:layout_height="25dp"
         android:text="@string/intro"
         android:textSize="20sp"
-        tools:layout_editor_absoluteY="64dp"
-        tools:layout_editor_absoluteX="7dp" />
+        tools:layout_editor_absoluteY="88dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView4" />
 
     <TextView
         android:layout_width="355dp"
         android:layout_height="45dp"
         android:text="@string/programIntro"
-        tools:layout_editor_absoluteY="153dp"
-        tools:layout_editor_absoluteX="7dp" />
+        tools:layout_editor_absoluteY="206dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:id="@+id/textView"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
 
     <TextView
         android:layout_width="356dp"
         android:layout_height="41dp"
         android:text="@string/cookingHist"
-        tools:layout_editor_absoluteY="104dp"
-        tools:layout_editor_absoluteX="7dp" />
-    " />
+        tools:layout_editor_absoluteY="141dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
